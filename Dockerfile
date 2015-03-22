@@ -36,6 +36,6 @@ COPY ct-ng-config /root/ct-ng-conf/.config
 COPY ct-ng-env /usr/local/bin/ct-ng-env
 RUN chmod 755 /usr/local/bin/ct-ng-env
 RUN ct-ng-env ct-ng build
-RUN rm -f /root/ct-ng-conf/.build
+RUN rm -rf /root/ct-ng-conf/.build
 RUN rm -f /root/ct-ng-conf/build.log
 WORKDIR /
