@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export PATH=$PATH:/opt/cross/bin:/opt/x-tools/arm-unknown-linux-gnueabi/bin
+export CCPREFIX="/opt/x-tools/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-"
+
+exec $*
