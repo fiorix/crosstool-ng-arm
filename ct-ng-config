@@ -1,10 +1,11 @@
 #
 # Automatically generated make config: don't edit
 # crosstool-NG 1.20.0 Configuration
-# Sun Mar 22 02:45:11 2015
+# Mon Mar 23 13:38:42 2015
 #
 CT_CONFIGURE_has_make381=y
 CT_CONFIGURE_has_xz=y
+CT_CONFIGURE_has_svn=y
 CT_MODULES=y
 
 #
@@ -338,22 +339,9 @@ CT_LIBC_EGLIBC_V_2_18=y
 # CT_LIBC_EGLIBC_V_2_9 is not set
 # CT_LIBC_EGLIBC_V_TRUNK is not set
 CT_LIBC_EGLIBC_2_16_or_later=y
-
-#
-# svn is missing. You'll have to either:
-#
-
-#
-#   - have a pre-downloaded local tarball
-#
-
-#
-#   - or have a LAN mirror with a pre-downloaded tarball
-#
-
-#
-# otherwise you won't be able to download eglibc
-#
+CT_EGLIBC_REVISION="HEAD"
+# CT_EGLIBC_HTTP is not set
+# CT_EGLIBC_CHECKOUT is not set
 # CT_EGLIBC_OPT_SIZE is not set
 # CT_EGLIBC_CUSTOM_CONFIG is not set
 CT_LIBC_glibc_AVAILABLE=y
@@ -417,32 +405,37 @@ CT_LIBC_GLIBC_MIN_KERNEL="3.15.4"
 # C compiler
 #
 CT_CC="gcc"
-CT_CC_VERSION="4.9.1"
+CT_CC_VERSION="linaro-4.8-2014.01"
 CT_CC_CORE_PASSES_NEEDED=y
 CT_CC_CORE_PASS_1_NEEDED=y
 CT_CC_CORE_PASS_2_NEEDED=y
 CT_CC_gcc=y
-# CT_CC_GCC_SHOW_LINARO is not set
-CT_CC_V_4_9_1=y
+CT_CC_GCC_SHOW_LINARO=y
+# CT_CC_V_4_9_1 is not set
 # CT_CC_V_4_9_0 is not set
+CT_CC_V_linaro_4_8=y
 # CT_CC_V_4_8_3 is not set
 # CT_CC_V_4_8_2 is not set
 # CT_CC_V_4_8_1 is not set
 # CT_CC_V_4_8_0 is not set
+# CT_CC_V_linaro_4_7 is not set
 # CT_CC_V_4_7_4 is not set
 # CT_CC_V_4_7_3 is not set
 # CT_CC_V_4_7_2 is not set
 # CT_CC_V_4_7_1 is not set
 # CT_CC_V_4_7_0 is not set
+# CT_CC_V_linaro_4_6 is not set
 # CT_CC_V_4_6_4 is not set
 # CT_CC_V_4_6_3 is not set
 # CT_CC_V_4_6_2 is not set
 # CT_CC_V_4_6_1 is not set
 # CT_CC_V_4_6_0 is not set
+# CT_CC_V_linaro_4_5 is not set
 # CT_CC_V_4_5_3 is not set
 # CT_CC_V_4_5_2 is not set
 # CT_CC_V_4_5_1 is not set
 # CT_CC_V_4_5_0 is not set
+# CT_CC_V_linaro_4_4 is not set
 # CT_CC_V_4_4_7 is not set
 # CT_CC_V_4_4_6 is not set
 # CT_CC_V_4_4_5 is not set
@@ -466,9 +459,8 @@ CT_CC_GCC_4_4_or_later=y
 CT_CC_GCC_4_5_or_later=y
 CT_CC_GCC_4_6_or_later=y
 CT_CC_GCC_4_7_or_later=y
+CT_CC_GCC_4_8=y
 CT_CC_GCC_4_8_or_later=y
-CT_CC_GCC_4_9=y
-CT_CC_GCC_4_9_or_later=y
 CT_CC_GCC_HAS_GRAPHITE=y
 CT_CC_GCC_USE_GRAPHITE=y
 CT_CC_GCC_HAS_LTO=y
